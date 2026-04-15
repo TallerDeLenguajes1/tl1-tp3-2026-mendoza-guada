@@ -4,6 +4,7 @@
 #define N 5
 
 void MostrarPersonas(char * Lista[], int n);
+void buscarNombre(char *Lista[], int id);
 
 int main(){
     char *Nombres[N];
@@ -20,6 +21,16 @@ int main(){
     }
 
     MostrarPersonas(Nombres, N);
+    
+    int id;
+    printf("\n====\nBúsqueda por ID");
+    printf("\nIngrese un número de 1 a %d: ", N);
+    scanf("%d", &id);
+    do{
+        printf("\nNúmero inválido.\nIngrese un número de 1 a %d: ", N);
+        scanf("%d", &id);
+    } while (id>N);
+    buscarNombre(Nombres, id);
 
     return 0;
 }
@@ -31,3 +42,10 @@ void MostrarPersonas(char * Lista[], int n){
     }
 }
 
+void buscarNombre(char *Lista[], int id){
+    for (int i=0; i<N; i++){
+        if (i=id-1){
+            printf("%d- %s", i+1, Lista[i]);
+        }
+    }
+}
