@@ -26,10 +26,10 @@ int main(){
     printf("\n====\nBúsqueda por ID");
     printf("\nIngrese un número de 1 a %d: ", N);
     scanf("%d", &id);
-    do{
+   /* do{
         printf("\nNúmero inválido.\nIngrese un número de 1 a %d: ", N);
         scanf("%d", &id);
-    } while (id>N);
+    } while (id>N);*/
     buscarNombre(Nombres, id);
 
     return 0;
@@ -43,9 +43,13 @@ void MostrarPersonas(char * Lista[], int n){
 }
 
 void buscarNombre(char *Lista[], int id){
-    for (int i=0; i<N; i++){
-        if (i=id-1){
-            printf("%d- %s", i+1, Lista[i]);
+    if (id>N || id<1){
+        printf("No se encontró el valor buscado.");
+    } else {
+        for (int i=0; i<N; i++){
+            if (i=id-1){
+                printf("%d- %s", i+1, Lista[i]);
+            }
         }
     }
 }
