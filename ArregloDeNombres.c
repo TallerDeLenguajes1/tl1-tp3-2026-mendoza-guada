@@ -3,6 +3,8 @@
 #include <string.h>
 #define N 5
 
+void MostrarPersonas(char * Lista[], int n);
+
 int main(){
     char *Nombres[N];
     char buffer[90];
@@ -17,7 +19,15 @@ int main(){
         strcpy(Nombres[i], buffer);
     }
 
+    MostrarPersonas(Nombres, N);
+
     return 0;
 }
 
+void MostrarPersonas(char * Lista[], int n){
+    printf("\nLos nombres ingresados son:\n");
+    for (int i=0; i<n; i++){
+        printf("%d - %s\n", i+1, Lista[i]);
+    }
+}
 

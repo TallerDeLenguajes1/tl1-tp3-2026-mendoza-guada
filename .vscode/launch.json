@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Taller1/tl1-tp3-2026-mendoza-guada",
-      "program": "c:/Taller1/tl1-tp3-2026-mendoza-guada/build/Debug/outDebug",
+      "program": "c:/Taller1/tl1-tp3-2026-mendoza-guada/ArregloDeNombres.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
