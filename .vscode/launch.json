@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Taller1/tl1-tp3-2026-mendoza-guada",
-      "program": "c:/Taller1/tl1-tp3-2026-mendoza-guada/ArregloDeNombres.exe",
+      "cwd": "c:/taller1_2026/tl1-tp3-2026-mendoza-guada/",
+      "program":"c:/taller1_2026/tl1-tp3-2026-mendoza-guada/Distribuidora.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

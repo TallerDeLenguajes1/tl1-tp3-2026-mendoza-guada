@@ -17,7 +17,7 @@ int main(){
         printf("%d- ",i+1);
         scanf("%s", buffer);
         cant_letras= strlen(buffer);    
-        Nombres[i] = (char *) malloc(sizeof(char)*cant_letras);
+        Nombres[i] = (char *) malloc(sizeof(char)*(cant_letras+1));
         strcpy(Nombres[i], buffer);
     }
 
